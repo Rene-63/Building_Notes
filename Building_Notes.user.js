@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            LSS building notes
 // @name:de         LSS Wachnotizen
-// @version         1.0.2 (van Crazycake)
+// @version         1.0.3 
 // @author          Crazycake (NL versie aanpassing door Rene-MKS)
 // @description     Adds notes to every station
 // @homepage        https://github.com/Cr4zyc4k3/LSS
@@ -26,15 +26,15 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Wachnotizen</h4>
+                    <h4 class="modal-title">Notitieblok</h4>
                 </div>
                 <div class="modal-body">
                     <textarea class="text optional" cols="40" id="crazycakeBNInput" name="note[message]" rows="20" style="width:100%;height:200px;"></textarea>
                 </div>
                 <div class="modal-footer">
-                    <a href="#" class="btn btn-danger" id="crazycakeBNDelete">Löschen</a>
-                    <a href="#" class="btn btn-success" id="crazycakeBNSubmit">Speichern</a>
-                    <button type="button" id="crazycakeBNClose" class="btn btn-default" data-dismiss="modal">Schließen&Speichern</button>
+                    <a href="#" class="btn btn-danger" id="crazycakeBNDelete">Annuleren</a>
+                    <a href="#" class="btn btn-success" id="crazycakeBNSubmit">Opslaan</a>
+                    <button type="button" id="crazycakeBNClose" class="btn btn-default" data-dismiss="modal">Opslaan & Sluiten</button>
                 </div>
             </div>
         </div>
