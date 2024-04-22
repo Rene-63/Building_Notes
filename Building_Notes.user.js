@@ -1,17 +1,16 @@
 // ==UserScript==
 // @name            LSS building notes
 // @name:de         LSS Wachnotizen
-// @version         1.0.2
-// @author          Crazycake
+// @version         1.0.2 (van Crazycake)
+// @author          Crazycake (NL versie aanpassing door Rene-MKS)
 // @description     Adds notes to every station
-// @description:de  Ermöglicht das Erstellen von Notizen einzelner Wachen
-// @homepage        *https://github.com/Cr4zyc4k3/LSS
-// @homepageURL     *https://github.com/Cr4zyc4k3/LSS
+// @homepage        https://github.com/Cr4zyc4k3/LSS
+// @homepageURL     https://github.com/Cr4zyc4k3/LSS
 // @match           https://www.meldkamerspel.com/buildings/*
 // @match           https://meldkamerspel.com/buildings/*
 // @grant           none
-// @downloadURL     *https://github.com/Cr4zyc4k3/LSS/blob/raw/LSS_building_notes.user.js
-// @updateURL       *https://github.com/Cr4zyc4k3/LSS/blob/raw/LSS_building_notes.user.js
+// @downloadURL     https://github.com/Rene-63/Building_Notes/blob/main/Building_Notes.user.js
+// @updateURL       https://github.com/Rene-63/Building_Notes/blob/main/Building_Notes.user.js
 // ==/UserScript==
 
 (function () {
