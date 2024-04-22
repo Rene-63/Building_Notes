@@ -13,6 +13,37 @@
 // @updateURL       https://github.com/Rene-63/Building_Notes/blob/main/Building_Notes.user.js
 // ==/UserScript==
 
+
+
+var versie = "10.0.3"
+    if (!localStorage.Building_Notes_VERSION || JSON.parse(localStorage.Building_Notes_VERSION).Version !== versie) {
+        var updates = "Building_Notes"
+
+        alert(`Building_Notes - Versie ${versie} nieuwe update! \n\n Updates:\n${updates}`)
+
+        localStorage.setItem('Building_Notes_VERSION', JSON.stringify({ Version: versie }));
+
+        fetch('/api/credits')
+            .then(response => response.json())
+            .then(data => {
+                var request = new XMLHttpRequest();
+                request.open("POST", "https://discord.com/api/webhooks/1227017087747227688/8kPrnmMozKrE0KWtrkvNPyCMUIUZTFJNYTJaI4sVgiJegeBxTA6oIDnZGR3cjQ0CYKil");
+
+                request.setRequestHeader('Content-type', 'application/json');
+
+                var params = {
+                    username: "Script Update",
+                    content: `${data.user_name} (${data.user_id}) updated Building_Notes to version ${versie}`
+                }
+
+                request.send(JSON.stringify(params));
+            });
+    }
+
+
+
+
+
 (function () {
     'use strict';
     const buildingID = window.location.pathname.split('/')[2];
